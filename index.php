@@ -25,7 +25,7 @@ require 'header.php';
 <div class="card shadow-sm">
     <div class="card-body p-0">
         <table class="table table-hover mb-0">
-            <thead class="table-dark">
+            <thead class="table-roxo-escuro">
                 <tr>
                     <th>Título</th>
                     <th>Status</th>

@@ -1,4 +1,4 @@
-<?php
+=<?php
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
@@ -10,11 +10,21 @@ if (session_status() === PHP_SESSION_NONE) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciador de Tarefas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        .bg-roxo-escuro { 
+            background-color: #4A148C !important; /* Código hexadecimal do roxo escuro */
+        }
+        .table-roxo-escuro th { 
+            background-color: #4A148C !important; 
+            color: white !important; 
+        }
+    </style>
 </head>
 <body class="bg-light">
 
 <?php if (isset($_SESSION["usuario_id"])): ?>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+<nav class="navbar navbar-expand-lg navbar-dark bg-roxo-escuro mb-4 shadow-sm">
     <div class="container">
         <a class="navbar-brand" href="index.php">Minhas Tarefas</a>
         <div class="d-flex text-white align-items-center">
